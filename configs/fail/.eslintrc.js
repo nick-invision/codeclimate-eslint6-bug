@@ -6,7 +6,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    "spaced-comment": 0,
+    "spaced-comment": 1,
   },
   overrides: [
     {
