@@ -1,0 +1,1 @@
+# codeclimate-eslint6-bug
