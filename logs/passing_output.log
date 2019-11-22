@@ -1,0 +1,36 @@
+
+> codeclimate-eslint6-bug@1.0.0 test:pass /Users/nickfields/source/codeclimate-eslint6-bug
+> npm run setup:pass && CODECLIMATE_DEBUG=1 codeclimate analyze && npm run setup:fail
+
+
+> codeclimate-eslint6-bug@1.0.0 setup:pass /Users/nickfields/source/codeclimate-eslint6-bug
+> rimraf .eslintrc.js && copyfiles -f configs/pass/.eslintrc.js .
+
+I, [2019-11-22T18:44:16.284885 #1]  INFO -- : starting engine eslint
+D, [2019-11-22T18:44:21.465381 #1] DEBUG -- : /config.json content: {"enabled"=>true, "channel"=>"eslint-6", "config"=>{"config"=>".eslintrc.js", "extensions"=>[".js", ".jsx", ".ts", ".tsx"], "ignore_warnings"=>true}, "include_paths"=>["LICENSE", ".eslintrc.fail.js", "README.md", "passing_output.log", "logs/", ".gitignore", "package-lock.json", "package.json", "configs/", ".eslintrc.js", "tsconfig.json", ".codeclimate.yml", ".eslintrc.pass.js", "src/"], "debug"=>"1"}
+D, [2019-11-22T18:44:21.478004 #1] DEBUG -- : docker run: ["docker", "run", "--name", "cc-engines-eslint-eslint-6-58a20f1a-b9ac-4eb1-8d52-12bcbce96660", "--cap-drop", "all", "--label", "com.codeclimate.label=359d5b93-2afe-49c7-9475-4bc1309703ce", "--log-driver", "none", "--memory-swap", "-1", "--net", "none", "--rm", "--volume", "/Users/nickfields/source/codeclimate-eslint6-bug:/code:ro", "--volume", "/tmp/cc/841bf056-7f1c-4176-890d-f16973f0eae9:/config.json:ro", "--user", "9000:9000", "--memory", "1024000000", "codeclimate/codeclimate-eslint:eslint-6"]
+D, [2019-11-22T18:44:22.453809 #1] DEBUG -- : engine stderr: Ignoring the following rules that rely on module resolution:
+D, [2019-11-22T18:44:22.455141 #1] DEBUG -- : engine stderr: 	 * import/extensionsimport/named
+D, [2019-11-22T18:44:22.455185 #1] DEBUG -- : engine stderr: 	 * import/namespace
+D, [2019-11-22T18:44:22.455217 #1] DEBUG -- : engine stderr: 	 * import/no-absolute-path
+D, [2019-11-22T18:44:22.455236 #1] DEBUG -- : engine stderr: 	 * import/no-cycle
+D, [2019-11-22T18:44:22.455256 #1] DEBUG -- : engine stderr: 	 * import/no-duplicates
+D, [2019-11-22T18:44:22.455273 #1] DEBUG -- : engine stderr: 	 * import/no-extraneous-dependencies
+D, [2019-11-22T18:44:22.455293 #1] DEBUG -- : engine stderr: 	 * import/no-named-as-default
+D, [2019-11-22T18:44:22.455315 #1] DEBUG -- : engine stderr: 	 * import/no-named-as-default-member
+D, [2019-11-22T18:44:22.455350 #1] DEBUG -- : engine stderr: 	 * import/no-restricted-paths
+D, [2019-11-22T18:44:22.455380 #1] DEBUG -- : engine stderr: 	 * import/no-unresolved
+D, [2019-11-22T18:44:22.455411 #1] DEBUG -- : engine stderr: 	 * node/no-hide-code-modules
+D, [2019-11-22T18:44:22.455434 #1] DEBUG -- : engine stderr: 	 * node/no-missing-require
+D, [2019-11-22T18:44:22.455465 #1] DEBUG -- : engine stderr: Ignoring the following settings that rely on module resolution:
+D, [2019-11-22T18:44:22.455509 #1] DEBUG -- : engine stderr: 	 * undefined
+D, [2019-11-22T18:44:22.455536 #1] DEBUG -- : engine stderr: Skipped modules
+D, [2019-11-22T18:44:22.456368 #1] DEBUG -- : engine stderr: 	 * undefined
+I, [2019-11-22T18:44:22.790937 #1]  INFO -- : finished engine eslint
+Starting analysis
+
+Analysis complete! Found 0 issues.
+
+> codeclimate-eslint6-bug@1.0.0 setup:fail /Users/nickfields/source/codeclimate-eslint6-bug
+> rimraf .eslintrc.js && copyfiles -f configs/fail/.eslintrc.js .
+

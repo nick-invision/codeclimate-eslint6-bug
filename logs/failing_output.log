@@ -1,0 +1,133 @@
+
+> codeclimate-eslint6-bug@1.0.0 test:fail /Users/nickfields/source/codeclimate-eslint6-bug
+> npm run setup:fail && CODECLIMATE_DEBUG=1 codeclimate analyze
+
+
+> codeclimate-eslint6-bug@1.0.0 setup:fail /Users/nickfields/source/codeclimate-eslint6-bug
+> rimraf .eslintrc.js && copyfiles -f configs/fail/.eslintrc.js .
+
+I, [2019-11-22T18:44:44.142593 #1]  INFO -- : starting engine eslint
+D, [2019-11-22T18:44:49.194782 #1] DEBUG -- : /config.json content: {"enabled"=>true, "channel"=>"eslint-6", "config"=>{"config"=>".eslintrc.js", "extensions"=>[".js", ".jsx", ".ts", ".tsx"], "ignore_warnings"=>true}, "include_paths"=>["LICENSE", ".eslintrc.fail.js", "README.md", "passing_output.log", "logs/", ".gitignore", "package-lock.json", "package.json", "configs/", ".eslintrc.js", "tsconfig.json", "failing_output.log", ".codeclimate.yml", ".eslintrc.pass.js", "src/"], "debug"=>"1"}
+D, [2019-11-22T18:44:49.207125 #1] DEBUG -- : docker run: ["docker", "run", "--name", "cc-engines-eslint-eslint-6-dddd3e5e-b5a4-4ee6-9622-8b7f8c3fc172", "--cap-drop", "all", "--label", "com.codeclimate.label=16bc93ff-641e-4522-b0e5-d2edf27bdb45", "--log-driver", "none", "--memory-swap", "-1", "--net", "none", "--rm", "--volume", "/Users/nickfields/source/codeclimate-eslint6-bug:/code:ro", "--volume", "/tmp/cc/41fdc433-fa37-4e15-a17b-a23d877e7898:/config.json:ro", "--user", "9000:9000", "--memory", "1024000000", "codeclimate/codeclimate-eslint:eslint-6"]
+D, [2019-11-22T18:44:51.824872 #1] DEBUG -- : engine stderr: No rules are configured. Make sure you have added a config file with rules enabled.
+D, [2019-11-22T18:44:51.825827 #1] DEBUG -- : engine stderr: See our documentation at https://docs.codeclimate.com/docs/eslint for more information.
+D, [2019-11-22T18:44:51.915589 #1] DEBUG -- : engine stdout: {"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/no-explicit-any","description":"Definition for rule '@typescript-eslint/no-explicit-any' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.929222 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/adjacent-overload-signatures","description":"Definition for rule '@typescript-eslint/adjacent-overload-signatures' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.934984 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/ban-types","description":"Definition for rule '@typescript-eslint/ban-types' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.940112 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/camelcase","description":"Definition for rule '@typescript-eslint/camelcase' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.946619 #1] DEBUG -- : engine stderr: Ignoring the following rules that rely on module resolution:
+D, [2019-11-22T18:44:51.946739 #1] DEBUG -- : engine stderr: 	 * import/extensionsimport/named
+D, [2019-11-22T18:44:51.946774 #1] DEBUG -- : engine stderr: 	 * import/namespace
+D, [2019-11-22T18:44:51.946800 #1] DEBUG -- : engine stderr: 	 * import/no-absolute-path
+D, [2019-11-22T18:44:51.946843 #1] DEBUG -- : engine stderr: 	 * import/no-cycle
+D, [2019-11-22T18:44:51.947011 #1] DEBUG -- : engine stderr: 	 * import/no-duplicates
+D, [2019-11-22T18:44:51.947256 #1] DEBUG -- : engine stderr: 	 * import/no-extraneous-dependencies
+D, [2019-11-22T18:44:51.947320 #1] DEBUG -- : engine stderr: 	 * import/no-named-as-default
+D, [2019-11-22T18:44:51.947347 #1] DEBUG -- : engine stderr: 	 * import/no-named-as-default-member
+D, [2019-11-22T18:44:51.947376 #1] DEBUG -- : engine stderr: 	 * import/no-restricted-paths
+D, [2019-11-22T18:44:51.947583 #1] DEBUG -- : engine stderr: 	 * import/no-unresolved
+D, [2019-11-22T18:44:51.947607 #1] DEBUG -- : engine stderr: 	 * node/no-hide-code-modules
+D, [2019-11-22T18:44:51.947800 #1] DEBUG -- : engine stderr: 	 * node/no-missing-require
+D, [2019-11-22T18:44:51.947952 #1] DEBUG -- : engine stderr: Ignoring the following settings that rely on module resolution:
+D, [2019-11-22T18:44:51.948050 #1] DEBUG -- : engine stderr: 	 * undefined
+D, [2019-11-22T18:44:51.948076 #1] DEBUG -- : engine stderr: Skipped modules
+D, [2019-11-22T18:44:51.948099 #1] DEBUG -- : engine stderr: 	 * undefined
+D, [2019-11-22T18:44:51.952541 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/class-name-casing","description":"Definition for rule '@typescript-eslint/class-name-casing' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.958686 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/consistent-type-assertions","description":"Definition for rule '@typescript-eslint/consistent-type-assertions' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.964365 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/explicit-function-return-type","description":"Definition for rule '@typescript-eslint/explicit-function-return-type' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.969631 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/interface-name-prefix","description":"Definition for rule '@typescript-eslint/interface-name-prefix' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.975002 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/member-delimiter-style","description":"Definition for rule '@typescript-eslint/member-delimiter-style' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.979516 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/no-array-constructor","description":"Definition for rule '@typescript-eslint/no-array-constructor' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.984460 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/no-empty-function","description":"Definition for rule '@typescript-eslint/no-empty-function' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.988719 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/no-empty-interface","description":"Definition for rule '@typescript-eslint/no-empty-interface' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.993302 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/ban-ts-ignore","description":"Definition for rule '@typescript-eslint/ban-ts-ignore' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:51.998232 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/no-inferrable-types","description":"Definition for rule '@typescript-eslint/no-inferrable-types' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:52.003060 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/no-misused-new","description":"Definition for rule '@typescript-eslint/no-misused-new' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:52.007653 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/no-namespace","description":"Definition for rule '@typescript-eslint/no-namespace' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:52.012066 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/no-non-null-assertion","description":"Definition for rule '@typescript-eslint/no-non-null-assertion' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:52.017210 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/no-this-alias","description":"Definition for rule '@typescript-eslint/no-this-alias' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:52.021931 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/no-unused-vars","description":"Definition for rule '@typescript-eslint/no-unused-vars' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:52.027452 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/no-use-before-define","description":"Definition for rule '@typescript-eslint/no-use-before-define' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:52.032238 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/no-var-requires","description":"Definition for rule '@typescript-eslint/no-var-requires' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:52.037682 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/prefer-namespace-keyword","description":"Definition for rule '@typescript-eslint/prefer-namespace-keyword' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:52.042530 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/triple-slash-reference","description":"Definition for rule '@typescript-eslint/triple-slash-reference' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:52.047169 #1] DEBUG -- : engine stdout: 
+
+{"type":"issue","categories":["Style"],"check_name":"@typescript-eslint/type-annotation-spacing","description":"Definition for rule '@typescript-eslint/type-annotation-spacing' was not found.","content":{"body":"For more information visit Source: http://eslint.org/docs/rules/\n"},"location":{"path":"src/index.ts","positions":{"begin":{"line":1,"column":1},"end":{"line":1,"column":1}}},"remediation_points":50000}
+D, [2019-11-22T18:44:52.352901 #1] DEBUG -- : engine stdout: 
+
+
+I, [2019-11-22T18:44:52.354655 #1]  INFO -- : finished engine eslint
+Starting analysis
+
+== src/index.ts (24 issues) ==
+1: Definition for rule '@typescript-eslint/no-explicit-any' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/adjacent-overload-signatures' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/ban-types' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/camelcase' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/class-name-casing' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/consistent-type-assertions' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/explicit-function-return-type' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/interface-name-prefix' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/member-delimiter-style' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/no-array-constructor' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/no-empty-function' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/no-empty-interface' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/ban-ts-ignore' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/no-inferrable-types' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/no-misused-new' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/no-namespace' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/no-non-null-assertion' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/no-this-alias' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/no-unused-vars' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/no-use-before-define' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/no-var-requires' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/prefer-namespace-keyword' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/triple-slash-reference' was not found. [eslint]
+1: Definition for rule '@typescript-eslint/type-annotation-spacing' was not found. [eslint]
+
+Analysis complete! Found 24 issues.

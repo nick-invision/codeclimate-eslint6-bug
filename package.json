@@ -17,14 +17,18 @@
   "scripts": {
     "prepare": "tsc",
     "lint": "eslint src/**",
-    "test:pass": "cd configs/pass && CODECLIMATE_DEBUG=1 codeclimate analyze",
-    "test:fail": "echo \"Error: no test specified\" && exit 1"
+    "setup:pass": "rimraf .eslintrc.js && copyfiles -f configs/pass/.eslintrc.js .",
+    "setup:fail": "rimraf .eslintrc.js && copyfiles -f configs/fail/.eslintrc.js .",
+    "test:pass": "npm run setup:pass && CODECLIMATE_DEBUG=1 codeclimate analyze && npm run setup:fail",
+    "test:fail": "npm run setup:fail && CODECLIMATE_DEBUG=1 codeclimate analyze"
   },
   "devDependencies": {
     "@types/node": "10.14.4",
-    "@typescript-eslint/parser": "^2.8.0",
     "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "copyfiles": "^2.1.1",
     "eslint": "^6.1.0",
-    "typescript": "3.0.1"
+    "rimraf": "^3.0.0",
+    "typescript": "^3.2.1"
   }
 }
