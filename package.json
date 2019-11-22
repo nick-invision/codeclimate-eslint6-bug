@@ -1,0 +1,30 @@
+{
+  "name": "codeclimate-eslint6-bug",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/nick-invision/codeclimate-eslint6-bug#readme",
+  "bugs": {
+    "url": "https://github.com/nick-invision/codeclimate-eslint6-bug/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nick-invision/codeclimate-eslint6-bug.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "tsc",
+    "lint": "eslint src/**",
+    "test:pass": "cd configs/pass && CODECLIMATE_DEBUG=1 codeclimate analyze",
+    "test:fail": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "10.14.4",
+    "@typescript-eslint/parser": "^2.8.0",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "eslint": "^6.1.0",
+    "typescript": "3.0.1"
+  }
+}

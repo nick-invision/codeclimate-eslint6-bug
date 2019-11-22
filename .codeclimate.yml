@@ -1,0 +1,20 @@
+version: "2" #required to adjust maintainability checks
+plugins:
+  duplication:
+    enabled: false
+  structure:
+    enabled : false
+  eslint:
+    enabled: true
+    channel: "eslint-6"
+    config:
+      # this config fails to load rules
+      config: ".eslintrc.js"
+      # this config properly loads rules
+      # config: ".eslintrc.works.js"
+      extensions:
+        - .js
+        - .jsx
+        - .ts
+        - .tsx
+      ignore_warnings: true
