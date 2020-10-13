@@ -18,5 +18,8 @@ module.exports = {
         "global-require": "off"
       }
     }
+  ],
+  plugins: [
+    "@typescript-eslint"
   ]
 }
