@@ -8,12 +8,12 @@ module.exports = {
   rules: {
     "spaced-comment": 0,
   },
+  extends: [
+    "plugin:@typescript-eslint/recommended",
+  ],
   overrides: [
     {
       files: ["*.ts"],
-      extends: [
-        "plugin:@typescript-eslint/recommended",
-      ],
       rules: {
         "global-require": "off"
       }
