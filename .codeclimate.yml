@@ -17,4 +17,4 @@ plugins:
         - .jsx
         - .ts
         - .tsx
-      ignore_warnings: true
+      ignore_warnings: false
